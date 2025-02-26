@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    position: fixed;
+    background-color: #335fb5;
+    width: 100%;
+    padding: 5px 0;
+    z-index: 1000; 
+}
+
+nav .div-menu {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;   
+}
+
+nav .div-menu ul {
+    display: flex;
+}
+
+nav .div-menu ul li {
+    padding-left: 15px;
+    list-style: none;  
+}
+
+nav .div-menu ul li a {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    transition: 0.3s; 
+}
+
+nav .div-menu ul li a:hover {
+    background-color: white;
+    color: #103273;
+    border-radius: 3px;
+}
+
+/* Logo styling */
+nav .div-menu .div-logo a img {
+    width: 70px;
+    height: 70px;
+}
+
+/* Content section */
+.content {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Background Image */
+.content .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('Resources/background.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7; 
+    z-index: -1;
+}
+.login-form {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center; 
+}
+
+.login-head {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.raw {
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.raw i {
+    margin-right: 10px;
+    color: #333;
+}
+
+.raw input {
+    border: none;
+    background: transparent;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.raw input[type="submit"] {
+    background-color: #335fb5;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.raw input[type="submit"]:hover {
+    background-color: #103273;
+}
+
+.password {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.password a {
+    text-decoration: none;
+    color: #335fb5;
+}
+
+.password a:hover {
+    text-decoration: underline;
+}
+
